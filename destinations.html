@@ -2,86 +2,79 @@
 <html lang="en">
     <head>
         <title>Sarah's Portfolio | Destinations </title>
+        <link rel="stylesheet" href="styles.css">
         <meta name="Gothic destinations" content="Provides brief description of three gothic locations.">
+
+        <style>
+            .item-container {
+                padding: 10px;
+            }
+        </style>
     </head>
-    <body bgcolor="black">
-        <font color="darkred">
-            <i>
-                <!--Navigation bar-->
-                <nav>
-                    <h1>
-                        <a href="index.html">Home</a> | 
-                        <a href="about_me.html">About Me</a> | 
-                        <a href="destinations.html">Destinations</a> | 
-                        <a href="gallery.html">Gallery</a> | 
-                        <a href="contact.html">Contact</a>
-                    </h1>
-                </nav>
-                <center>
-                    <h1>
-                        <b>Destinations</b>
-                    </h1>
-                    <table cellpadding="10">
-                        <tr>
-                            <td>
-                                <!--Image of Bran Castle-->
-                                <img src="Images/bran_castle.jpg" alt="Bran Castle">
-                            </td>
-                            <td>
-                                <font color="darkgreen">
-                                    <h2>
-                                        Bran Castle
-                                    </h2>
-                                </font>
-                                <!--Brief description on Bran Castle-->
-                                <font color="darkmagenta">
-                                    <h4>
-                                        Known as Dracula's Castle, Bran Castle has ties to the real-life Vlad the Impaler, whose brutal actions inspired Bram Stoker's Dracula. The castle's eerie architecture, perched on a misty hill, adds to its Gothic charm. The history of torture, bloodshed, and supernatural myths surrounding the castle has made it one of the most hauntingly beautiful Gothic sites in the world. <a href="Destinations/bran_castle.html">Learn more</a>
-                                    </h4>
-                                </font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <!--Image of The Cathedral of Chartres-->
-                                <img src="Images/Cathedral.png" alt="Cathedral">
-                            </td>
-                            <td>
-                                <font color="darkgreen">
-                                    <h2>
-                                        The Cathedral of Chartres
-                                    </h2>
-                                </font>
-                                <font color="darkmagenta">
-                                    <!--Brief description on The Cathedral of Chartres-->
-                                    <h4>
-                                        This stunning Gothic cathedral, known for its incredible stained-glass windows, is steeped in history. Built in the 12th century, it has served as a spiritual center and a symbol of faith throughout centuries. The cathedral has been the site of countless pilgrimages, and it is said to house the Sancta Camisa, the tunic worn by the Virgin Mary during the birth of Christ, adding to its spiritual and mystical significance. <a href="Destinations/cathedral.html">Learn more</a>
-                                    </h4>
-                                </font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <!--Image of The Dark Hedges-->
-                                <img src="Images/dark_hedges.png" alt="Dark Hedges">
-                            </td>
-                            <td>
-                                <font color="darkgreen">
-                                    <h2>
-                                        The Dark Hedges
-                                    </h2>
-                                </font>
-                                <font color="darkmagenta">
-                                    <!--Brief description on The Dark Hedges-->
-                                    <h4>
-                                        A majestic avenue of beech trees lining a road, The Dark Hedges has an ethereal and haunting quality. Its appearance in Game of Thrones has only added to its mystique. The trees are said to be haunted by a "Grey Lady" ghost, and the surrounding folklore about the trees being cursed or magical contributes to its Gothic appeal. <a href="Destinations/dark_hedges.html">Learn more</a>
-                                    </h4>
-                                </font>
-                            </td>
-                        </tr>
-                    </table>               
-                </center>
-            </i>
-        </font>
+    <body>
+        <!--Navigation bar-->
+        <h2>
+            <nav>                    
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="about_me.html">About Me</a></li>
+                <li class="nav"><a href="destinations.html">Destinations</a></li>
+                <li class="nav"><a href="gallery.html">Gallery</a></li>
+                <li class="nav"><a href="contact.html">Contact</a></li>
+            </nav>
+        </h2>
+        <center>
+            <h1>Destinations</h1>
+        </center>
+
+        <!-- Bran Castle Info -->
+        <div class="item-container">
+            <div class="image-container">
+                <!--Image of Bran Castle-->
+                <img src="Images/bran_castle.jpg" alt="Bran Castle">
+            </div>
+            <div>
+                <h2 style="color: darkgreen">
+                    Bran Castle
+                </h2>
+                <!--Brief description on Bran Castle-->
+                <h4 style="color: darkmagenta">
+                    Known as Dracula's Castle, Bran Castle has ties to the real-life Vlad the Impaler, whose brutal actions inspired Bram Stoker's Dracula. The castle's eerie architecture, perched on a misty hill, adds to its Gothic charm. The history of torture, bloodshed, and supernatural myths surrounding the castle has made it one of the most hauntingly beautiful Gothic sites in the world. <a href="Destinations/bran_castle.html">Learn more ...</a>
+                </h4>
+            </div>
+        </div>
+
+        <!-- The Cathedral of Chartres Info -->
+        <div class="item-container">
+            <div class="image-container">
+                <!--Image of The Cathedral of Chartres-->
+                <img src="Images/Cathedral.png" alt="Cathedral">
+            </div>
+            <div>
+                <h2 style="color: darkgreen">
+                    The Cathedral of Chartres
+                </h2>
+                <!--Brief description on The Cathedral of Chartres-->
+                <h4 style="color: darkmagenta">
+                    This stunning Gothic cathedral, known for its incredible stained-glass windows, is steeped in history. Built in the 12th century, it has served as a spiritual center and a symbol of faith throughout centuries. The cathedral has been the site of countless pilgrimages, and it is said to house the Sancta Camisa, the tunic worn by the Virgin Mary during the birth of Christ, adding to its spiritual and mystical significance. <a href="Destinations/cathedral.html">Learn more ...</a>
+                </h4>
+            </div>
+        </div>
+
+        <!-- The Dark Hedges -->
+        <div class="item-container">
+            <div class="image-container">
+                <!--Image of The Dark Hedges-->
+                <img src="Images/dark_hedges.png" alt="Dark Hedges">
+            </div>
+            <div>
+                <h2 style="color: darkgreen">
+                    The Dark Hedges
+                </h2>
+                <!--Brief description on The Dark Hedges-->
+                <h4 style="color: darkmagenta">
+                    A majestic avenue of beech trees lining a road, The Dark Hedges has an ethereal and haunting quality. Its appearance in Game of Thrones has only added to its mystique. The trees are said to be haunted by a "Grey Lady" ghost, and the surrounding folklore about the trees being cursed or magical contributes to its Gothic appeal. <a href="Destinations/dark_hedges.html">Learn more ...</a>
+                </h4>
+            </div>
+        </div>
     </body>
 </html>

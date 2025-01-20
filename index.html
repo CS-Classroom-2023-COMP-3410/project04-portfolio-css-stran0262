@@ -2,69 +2,73 @@
 <html lang="en">
     <head>
         <title>Sarah's Portfolio | Home</title>
+        <link rel="stylesheet" href="styles.css">
         <meta name="Home page" content="Welcomes viewers to the portfolio, and lists the creator's favorite books and movies.">
+
+        <style>
+            /* List styles */
+            .list-container {
+                display: flex;
+                justify-content: center;           /* Horizontally center content */
+            }
+
+            ul {
+                padding: 0;                     /* Remove default padding */
+            }
+
+            ul li {
+                margin-bottom: 8px;             /* Add spacing between list items */
+                line-height: 1.5;               /* Improve readability */
+                font-weight: bold;
+            }
+        </style>
     </head>
-    <body bgcolor="black">
-        <font color="darkred">
-            <i>
-                <!--Navigation bar-->
-                <nav>
-                    <h1>
-                        <a href="index.html">Home</a> | 
-                        <a href="about_me.html">About Me</a> | 
-                        <a href="destinations.html">Destinations</a> | 
-                        <a href="gallery.html">Gallery</a> | 
-                        <a href="contact.html">Contact</a>
-                    </h1>
-                </nav>
-                <center>
-                    <h1>
-                        <b>Home</b>
-                    </h1>
-                    <img src="Images/Exterior.jpeg" alt="gothic castle exterior">
-                    <br><br>
-                    <h2>Welcome to Sarah's Dark World</h2>
-                    <h3>
-                        <font color="darkgreen">A place where dark creativity meets eerie elegance.</font>
-                    </h3>
-                    <h4>
-                        <!--Intro-->
-                        <font color="darkmagenta">
-                            Welcome, wanderer. You have entered the shadowed halls of my gothic portfolio, a realm where the light of the mundane fades and the mysteries of the unknown take shape. Here, I offer a glimpse into my artistic soul—one that finds beauty in darkness and inspiration in the macabre. Step lightly, for the works you'll encounter are as enigmatic as they are captivating, bound together by the themes of death, decay, and the haunting beauty of all things forgotten.
-                        </font>
-                    </h4>
-                    <br>
-                    <hr width="75%">
-                    <br>
-                    <!--Favorites-->
-                    <table>
-                        <tr>
-                            <th width="37.5%">
-                                <h3>Favorite Movies</h3>
-                                <font color="darkgreen">
-                                    <ul>
-                                        <li>Captain America: The Winter Soldier (2014)</li>
-                                        <li>Baby Driver (2017)</li>
-                                        <li>Guardians of the Galaxy Vol. 3 (2023)</li>
-                                        <li>Dune: Part I (2021)</li>
-                                    </ul>
-                                </font>
-                            </th>
-                            <th width="37.5%">
-                                <h3>Favorite Books</h3>
-                                <font color="darkgreen">
-                                    <ul>
-                                        <li>In Cold Blood - Truman Capote</li>
-                                        <li>Dune - Frank Herbert</li>
-                                        <li>We Are Here - Cat Thao Nguyen</li>
-                                        <li>Winter - Marissa Meyer</li>
-                                    </ul>
-                                </font>
-                            </th>
-                        </tr>
-                    </table>
-                </center>
-            </i>
-        </font>
+    <body>
+        <!--Navigation bar-->
+        <h2>
+            <nav>
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="about_me.html">About Me</a></li>
+                <li class="nav"><a href="destinations.html">Destinations</a></li>
+                <li class="nav"><a href="gallery.html">Gallery</a></li>
+                <li class="nav"><a href="contact.html">Contact</a></li>
+            </nav>
+        </h2>
+        <center>
+            <h1>Home</h1>
+            <img src="Images/Exterior.jpeg" alt="gothic castle exterior">
+            <br><br>
+            <h2>Welcome to Sarah's Dark World</h2>
+            <h3 style="color: darkgreen">
+                A place where dark creativity meets eerie elegance.
+            </h3>
+            <h4 style="color: darkmagenta">
+                <!--Intro-->
+                Welcome, wanderer. You have entered the shadowed halls of my gothic portfolio, a realm where the light of the mundane fades and the mysteries of the unknown take shape. Here, I offer a glimpse into my artistic soul—one that finds beauty in darkness and inspiration in the macabre. Step lightly, for the works you'll encounter are as enigmatic as they are captivating, bound together by the themes of death, decay, and the haunting beauty of all things forgotten.
+            </h4>
+            <hr width="75%">
+        </center>
+        <!--Favorites-->
+        <div class="list-container">
+            <div class="list-item">
+                <h3 style="font-size: x-large; margin-bottom: -5px;">
+                Favorite Movies</h3>
+                <ul>
+                    <li>Captain America: The Winter Soldier (2014)</li>
+                    <li>Baby Driver (2017)</li>
+                    <li>Guardians of the Galaxy Vol. 3 (2023)</li>
+                    <li>Dune: Part I (2021)</li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="font-size: x-large; margin-bottom: -5px;">Favorite Books</h3>
+                <ul>
+                    <li>In Cold Blood - Truman Capote</li>
+                    <li>Dune - Frank Herbert</li>
+                    <li>We Are Here - Cat Thao Nguyen</li>
+                    <li>Winter - Marissa Meyer</li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

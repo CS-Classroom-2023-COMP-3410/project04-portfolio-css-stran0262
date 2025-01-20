@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: darkred;    
+    font-style: italic;
+}
+
+h1 {
+    font-style: bold;
+}
+
+a {
+    color: darkmagenta;
+}
+
+a:hover {
+    color: #600060;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.nav {
+    float: left;
+
+}
+
+.nav a {
+    display: block;
+    color: darkmagenta;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover:not(.active) {
+    color: #600060;
+}
+
+ul {
+    color: darkgreen;
+}
+
+.list-item {
+    flex: 1; /* Each column takes up equal space */
+    max-width: 37.5%; /* Matches the width from your table */
+}
+
+.item-container {
+    display: flex;              /* Use flexbox for side-by-side layout */
+    justify-content: center;    /* Horizontally center content */
+    align-items: center;        /* Vertically center content */
+    gap: 20px;                  /* Space between image and text */
+}
+
+.image-container img {
+    height: auto;               /* Maintain aspect ratio */
+}
