@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sarah's Portfolio | Contact</title>
+        <meta name="Contact page" content="Form that asks for the users information and allows them to email the creator">
+    </head>
+    <body bgcolor="black">
+        <font color="darkred">
+            <i>
+                <!--Navigation bar-->
+                <nav>
+                    <h1>
+                        <a href="index.html">Home</a> | 
+                        <a href="about_me.html">About Me</a> | 
+                        <a href="destinations.html">Destinations</a> | 
+                        <a href="gallery.html">Gallery</a> | 
+                        <a href="contact.html">Contact</a>
+                    </h1>
+                </nav>
+                <center>
+                    <h1>Contact Me</h1>
+                    <font color="darkgreen">
+                        <h4>
+                            <!--Contact form-->
+                            <form action="mailto:sarah.tran@du.edu" method="post" enctype="text/plain">
+                                <table cellpadding="10">
+                                    <tr>
+                                        <td>Name:</td>
+                                        <td><input type="text" id="name" name="name" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><input type="email" id="email" name="email" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Subject:</td>
+                                        <td><input type="text" id="subject" name="subject" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Message:</td>
+                                        <td><textarea id="message" name="message" rows="4" cols="50" required></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <input type="submit" value="Send">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </h4>
+                    </font>
+                </center>
+            </i>
+        </font>
+    </body>
+</html>
