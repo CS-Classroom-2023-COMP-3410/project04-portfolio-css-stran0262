@@ -6,6 +6,18 @@
         <meta name="Home page" content="Welcomes viewers to the portfolio, and lists the creator's favorite books and movies.">
 
         <style>
+            /* Container for the image */
+            .image-container {
+                position: relative;
+                width: 80%; /* Adjust size */
+                max-width: 800px; /* Maximum width */
+                overflow: hidden;
+            }
+
+            .gothic-divider {
+                width: 75%;
+            }
+
             /* List styles */
             .list-container {
                 display: flex;
@@ -17,6 +29,7 @@
             }
 
             ul li {
+                font-family: 'Pirata';
                 margin-bottom: 8px;             /* Add spacing between list items */
                 line-height: 1.5;               /* Improve readability */
                 font-weight: bold;
@@ -24,6 +37,7 @@
         </style>
     </head>
     <body>
+        <div class="screen-overlay"></div>
         <!--Navigation bar-->
         <h2>
             <nav>
@@ -36,8 +50,10 @@
         </h2>
         <center>
             <h1>Home</h1>
-            <img src="Images/Exterior.jpeg" alt="gothic castle exterior">
-            <br><br>
+            <div class="image-container">
+                <img src="Images/Exterior.jpeg" width="100%" alt="gothic castle exterior">
+            </div>
+            <br>
             <h2>Welcome to Sarah's Dark World</h2>
             <h3 style="color: darkgreen">
                 A place where dark creativity meets eerie elegance.
@@ -46,7 +62,11 @@
                 <!--Intro-->
                 Welcome, wanderer. You have entered the shadowed halls of my gothic portfolio, a realm where the light of the mundane fades and the mysteries of the unknown take shape. Here, I offer a glimpse into my artistic soul—one that finds beauty in darkness and inspiration in the macabre. Step lightly, for the works you'll encounter are as enigmatic as they are captivating, bound together by the themes of death, decay, and the haunting beauty of all things forgotten.
             </h4>
-            <hr width="75%">
+            <div class="gothic-divider">
+                <hr>
+                <span class="gothic-symbols">⛧☾༺♰༻☽⛧</span>
+                <hr>
+            </div>
         </center>
         <!--Favorites-->
         <div class="list-container">

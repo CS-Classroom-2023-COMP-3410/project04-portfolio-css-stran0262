@@ -9,6 +9,7 @@
         <style>
             .form-container {
                 max-width: 400px;
+                max-height: 60vh;
                 margin: 0 auto;
                 border-radius: 5px;
             }
@@ -43,21 +44,23 @@
 
             /* Submit button style */
             .form-group button {
-                background-color: #282828;
+                background-color: black;
                 justify-content: center;
                 border: None;                       /* Removes border */
                 color: white;
                 padding: 10px 20px;
                 margin: 5px 0;
                 border-radius: 5px;                 /* Adjust for rounded corners */
+                font-size: larger;
             }
 
             .form-group button:hover{
-                background-color: darkgray;
+                background-color: #282828;
             }
         </style>
     </head>
     <body>
+        <div class="screen-overlay"></div>
         <!--Navigation bar-->
         <h2>
             <nav>
@@ -91,7 +94,7 @@
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit">Send</button>
+                    <button type="submit"><span style="font-family: Lodeh">Send</span></button>
                 </div>
             </form>
         </div>
