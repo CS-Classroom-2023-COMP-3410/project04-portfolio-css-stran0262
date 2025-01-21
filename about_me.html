@@ -6,19 +6,32 @@
         <meta name="About me page" content="Introduces viewers to the creator and thier skills, hobbies, and tools.">
 
         <style>
+            /* Divider style */
+            .gothic-divider {
+                width: 85%;
+            }
+
             /* Formatting styles */
             .item-container {
                 padding: 20px;
             }
 
             .text-container {
-                width: 600px;               /* Set a specific width for the text container */
+                width: 600px; /* Reduce width for larger screens */
+            }
+
+            /* For small screens */
+            @media screen and (max-width: 1000px) {
+                .text-container {
+                    width: 100%;  /* Make the container take up the full screen */
+                }
             }
 
             /* List styles */
             .list-container {
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
             }
 
             ul {
@@ -31,6 +44,17 @@
                 margin-bottom: 8px;         /* Add spacing between list items */
                 line-height: 1.5;           /* Improve readability */
                 font-weight: bold;
+            }
+
+            /* Formatting styles for small screens */
+            @media screen and (max-width: 1000px) {
+                .item-container {
+                    flex-wrap: wrap;   
+                }   
+            }
+            
+            .profile-container img {
+                height: auto;               /* Maintain aspect ratio */
             }
         </style>
     </head>
@@ -62,6 +86,14 @@
                 </h4>
             </div>
         </div>
+        <center>
+            <div class="gothic-divider">
+                <hr>
+                <span class="gothic-symbols">⛧☾༺♰༻☽⛧</span>
+                <hr>
+            </div>
+        </center>
+        
         <!--Other info.-->
         <div class="list-container">
             <div class="list-item">
@@ -82,7 +114,7 @@
                     <li>Watching Movies</li>
                 </ul>
             </div>
-            <div>
+            <div lass="list-item">
                 <h3 style="font-size: x-large; margin-bottom: -5px;">Tools</h3>
                 <ul>
                     <li>Photoshop</li>

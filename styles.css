@@ -64,6 +64,7 @@ nav {
     padding: 0;
     overflow: hidden;
     width: 100%;
+    display: flex;
 }
   
 .nav {
@@ -73,6 +74,7 @@ nav {
 .nav a {
     display: block;
     color: darkmagenta;
+    font-size: clamp(2rem, 2vw, 2rem);
     text-align: center;
     padding: 5px 16px;
     text-decoration: none;
@@ -87,22 +89,11 @@ ul {
     color: darkgreen;
 }
 
-.list-item {
-    flex: 1;                    /* Each column takes up equal space */
-    max-width: 37.5%;           /* Matches the width from your table */
-    /* justify-content: space-evenly; */
-}
-
-/* Formatting styles */
 .item-container {
     display: flex;              /* Use flexbox for side-by-side layout */
     justify-content: center;    /* Horizontally center content */
     align-items: center;        /* Vertically center content */
-    gap: 20px;                  /* Space between image and text */
-}
-
-.profile-container img {
-    height: auto;               /* Maintain aspect ratio */
+    gap: 20px;                  /* Space between image and text */ 
 }
 
 /* Screen style */
@@ -117,4 +108,18 @@ ul {
     background-size: cover;
     z-index: 1;
     pointer-events: none;
+}
+
+/* Gallery styles for small screens */
+@media screen and (max-width: 1000px) {
+    table, thead, tbody, th, td, tr {
+        display: block;                         /* Make everything block-level */
+    }
+
+    td {
+        border: none;                           /* Remove borders for cleaner look */
+        position: relative;                     /* Position for pseudo-elements */
+        padding: 5px;                           /* Add padding for spacing */
+        text-align: center;                     /* Center the content inside the cell */
+    }
 }

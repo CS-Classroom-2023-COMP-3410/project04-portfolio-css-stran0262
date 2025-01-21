@@ -8,8 +8,7 @@
         <!-- Form styles -->
         <style>
             .form-container {
-                max-width: 400px;
-                max-height: 60vh;
+                width: 60vw;
                 margin: 0 auto;
                 border-radius: 5px;
             }
@@ -21,7 +20,7 @@
             }
 
             .form-group label {
-                width: 100px;               /* Ensures labels are the same width */
+                width: 20vw;               /* Ensures labels are the same width */
                 text-align: left;
                 margin-right: 10px;         /* Space between label and input */
                 color: darkgreen;
@@ -56,6 +55,59 @@
 
             .form-group button:hover{
                 background-color: #282828;
+            }
+
+            /* Media Query for Small Screens */
+            @media screen and (max-width: 1000px) {
+                .form-container {
+                    width: 90%; /* Make the form wider */
+                    padding: 20px; /* Add more padding for visual balance */
+                }
+
+                .form-group {
+                    display: flex;
+                    justify-content: center;    /* Horizontally center content */
+                    margin-bottom: 3vh;
+                    
+                }
+
+                .form-group label {
+                    width: 30vw;               /* Ensures labels are the same width */
+                    text-align: left;
+                    margin-right: 5px;         /* Space between label and input */
+                    color: darkgreen;
+                    font-size: xx-large;
+                    margin-right: 2vh;
+                }
+
+                .form-group input {
+                    flex: 1;
+                    padding: 1.5vh;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+
+                .form-group textarea {
+                    flex: 1;
+                    padding: 4vh;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+
+                .form-group button {
+                    width: 80%; /* Full width for smaller screens */
+                    height: auto; /* Adjust height automatically */
+                    background-color: black;
+                    justify-content: center;
+                    border: None;                       /* Removes border */
+                    color: white;
+                    padding: 10px 20px;
+                    margin: 5px 0;
+                    border-radius: 5px;                 /* Adjust for rounded corners */
+                    font-size: larger;
+                }
             }
         </style>
     </head>
