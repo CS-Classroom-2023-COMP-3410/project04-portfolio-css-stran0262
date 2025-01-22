@@ -74,15 +74,21 @@ nav {
 .nav a {
     display: block;
     color: darkmagenta;
-    font-size: clamp(2rem, 2vw, 2rem);
     text-align: center;
     padding: 5px 16px;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav a:hover:not(.active) {
-    color: #600060;
+    animation: flicker 0.15s infinite;
+    color: #FF69B4;
 }
+
+@keyframes flicker {
+    0%, 100% { text-shadow: 0 0 5px crimson; }
+    50% { text-shadow: 0 0 15px crimson; }
+  }
 
 /* List styles */
 ul {
@@ -94,20 +100,6 @@ ul {
     justify-content: center;    /* Horizontally center content */
     align-items: center;        /* Vertically center content */
     gap: 20px;                  /* Space between image and text */ 
-}
-
-/* Screen style */
-.screen-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('Images/frame.png') no-repeat center center;
-    opacity: 0.3;
-    background-size: cover;
-    z-index: 1;
-    pointer-events: none;
 }
 
 /* Gallery styles for small screens */

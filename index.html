@@ -14,6 +14,23 @@
                 overflow: hidden;
             }
 
+            .main-image {
+                width: 100%; /* Main image width takes up the full container width */
+                height: auto; /* Height adjusts to maintain aspect ratio */
+                object-fit: cover;
+            } 
+
+            .image-overlay {
+                position: absolute; 
+                top: 0;
+                left: 0;
+                width: 100%;  /* Make the overlay cover the main image */
+                height: 99%; /* Match the height of the main image */
+                object-fit: fill;
+                opacity: 1; /* Adjust opacity for the overlay effect */
+                pointer-events: none;
+            }
+
             .gothic-divider {
                 width: 75%;
             }
@@ -36,8 +53,7 @@
             }
         </style>
     </head>
-    <body>
-        <div class="screen-overlay"></div>
+    <body>          
         <!--Navigation bar-->
         <h2>
             <nav>
@@ -50,9 +66,10 @@
         </h2>
         <center>
             <h1>Home</h1>
-            <div class="image-container">
-                <img src="Images/Exterior.jpeg" width="100%" alt="gothic castle exterior">
-            </div>
+            <div class="image-container">               
+                <img src="Images/Exterior.jpeg" width="100%" alt="gothic castle exterior" class="main-image">
+                <img src="Images/frame.png" class="image-overlay">                
+            </div>            
             <br>
             <h2>Welcome to Sarah's Dark World</h2>
             <h3 style="color: darkgreen">
